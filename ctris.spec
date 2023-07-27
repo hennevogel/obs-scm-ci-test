@@ -13,7 +13,7 @@ BuildRoot:    	%{_tmppath}/%{name}-%{version}-build
 ctris HANS is a colorized, small and flexible Tetris(TM)-clone for the console. Go play!
 
 %prep
-%setup -q
+%setup -q -n %{name}-scm-test-%{version}
 
 %build
 make CFLAGS="$RPM_OPT_FLAGS"
