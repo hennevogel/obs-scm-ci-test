@@ -1,0 +1,20 @@
+version: '1.1'
+testbuild:
+  steps:
+    - branch_package:
+        source_project: home:hennevogel:ctris-scm-test
+        source_package: ctris
+        target_project: home:hennevogel:ctris-scm-test
+  filters:
+    event: pull_request
+
+rebuild:
+  steps:
+    - trigger_services:
+        project: home:hennevogel:ctris-scm-test
+        package: ctris
+  filters:
+    event: push
+    branches:
+      only:
+        - main
