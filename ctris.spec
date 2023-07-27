@@ -5,7 +5,7 @@ Group:        	Amusements/Games/Action/Arcade
 License:      	GPL
 Version:      	0.42
 Release:      	1
-Source0:       	%{name}-%{version}.tar.bz2
+Source0:       	%{name}-scm-test-%{version}.tar.bz2
 BuildRequires: 	ncurses-devel
 BuildRoot:    	%{_tmppath}/%{name}-%{version}-build
 
