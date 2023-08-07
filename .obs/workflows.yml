@@ -5,7 +5,7 @@ testbuild:
         source_project: home:hennevogel:ctris-scm-test
         source_package: ctris
         target_project: home:hennevogel:ctris-scm-test
-    - submit_package:
+    - submit_request:
         source_project: home:hennevogel:ctris-scm-test:%{SCM_ORGANIZATION_NAME}:%{SCM_REPOSITORY_NAME}:PR-%{SCM_PR_NUMBER}
         source_package: ctris
         target_project: home:hennevogel
