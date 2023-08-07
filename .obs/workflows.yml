@@ -6,7 +6,8 @@ testbuild:
         source_package: ctris
         target_project: home:hennevogel:ctris-scm-test
     - submit_package:
-        source_project: home:hennevogel:ctris-scm-test
+        source_project: home:hennevogel:ctris-scm-test:%{SCM_ORGANIZATION_NAME}:%{SCM_REPOSITORY_NAME}:PR-%{SCM_PR_NUMBER}
+        source_package: ctris
         target_project: home:hennevogel
   filters:
     event: pull_request
