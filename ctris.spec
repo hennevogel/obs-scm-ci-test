@@ -5,12 +5,12 @@ Group:        	Amusements/Games/Action/Arcade
 License:      	GPL
 Version:      	0.42
 Release:      	1
-Source0:       	%{name}-scm-test-%{version}.tar.bz2
+Source0:       	%{name}-scm-test-%{version}.tar.xz
 BuildRequires: 	ncurses-devel
 BuildRoot:    	%{_tmppath}/%{name}-%{version}-build
 
 %description
-ctris HANS is a colorized, small and flexible Tetris(TM)-clone for the console. Go play!
+ctris is a colorized, small and flexible Tetris(TM)-clone for the console. Go play!
 
 %prep
 %setup -q -n %{name}-scm-test-%{version}
